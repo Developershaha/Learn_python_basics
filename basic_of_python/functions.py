@@ -32,37 +32,49 @@ greet()
 
 def add_numbers(num1,num2): #with argummetn i am sending two argument num1 and num2 and that accepting as a parameters 
     sum=num1+num2
-    print(sum)
+    # print(sum)
     return sum;
 
 result=add_numbers(10,20)   
 
-print(result)
+# print(result)
 
 
-## types of function in python 1) position arguments 
+# ## types of function in python 1) position arguments 
 
-def introduce(name,age):
-    print(f"hey my name is {name} and age is {age}")
-
-
-introduce("shahaji",27)    
+# def introduce(name,age):
+#     print(f"hey my name is {name} and age is {age}")
 
 
-## keyword argument function type oky 
-
-print("keyword argument function type")
-
-introduce(age=29,name="akash")
+# introduce("shahaji",27)    
 
 
-## Default arguement type function
+# ## keyword argument function type oky 
 
-print("default argument type function ")
+# print("keyword argument function type")
 
-def greet(name="shahaji"):
-    print(f"hey good morging {name}")
+# introduce(age=29,name="akash")
 
-greet()    
 
-greet("akash")
+# ## Default arguement type function
+
+# print("default argument type function ")
+
+# def greet(name="shahaji"):
+#     print(f"hey good morging {name}")
+
+# greet()    
+
+
+# greet("akash")
+
+count=1
+def globalFun():
+    global count
+    count+=1
+    print(count)
+
+globalFun()
+
+print(count)
+
